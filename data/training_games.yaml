@@ -1,0 +1,59 @@
+- date: 2024-10-21
+  type: game
+  players_present:
+    - Marko
+    - Nathan
+    - Florian
+    - Dominik
+    - Gerold
+    - Fabian
+    - Mia
+    - Tomas
+
+- date: 2024-10-23
+  type: training
+  players_present:
+    - Iria
+    - Mia
+    - Tomas
+    - Vroni
+    - Nathan
+    - Gerold
+
+- date: 2024-10-28
+  type: training
+  players_present:
+    - Marko
+    - Leo
+    - Fabian
+    - Mia
+    - Gerold
+    - Tomas
+    - Dominik
+    - Florian
+    - Nathan
+    - Iria
+
+- date: 2024-10-30
+  type: training
+  players_present:
+    - Marko
+    - Vroni
+    - Gerold
+    - Florian
+    - Sabina
+    - Fabian
+    - Mia
+    - Laura
+
+- date: 2024-11-04
+  type: game
+  players_present:
+    - Mia
+    - Gerold
+    - Fabian
+    - Nathan
+    - Florian
+    - Tomas
+    - Dominik
+    - Sabina
