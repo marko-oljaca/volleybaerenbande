@@ -12,10 +12,10 @@ public class TeamLineupImage {
         TeamLineupImage teamLineupImage = new TeamLineupImage();
         List<String> players = List.of(
                 "Mia", "Gerold", "Fabian",
-                "Laura", "Dominik", "Nathan");
-        List<String> benchPlayers = List.of("Florian", "Tomas");
+                "Laura", "Florian", "Nathan");
+        List<String> benchPlayers = List.of("Marko");
         String referee = "Tomas";
-        String filePath = "graphics/team_lineup_2024_11_04.png";
+        String filePath = "graphics/team_lineup_2024_11_18.png";
 
         try {            teamLineupImage.createLineupImage(players, benchPlayers, referee, filePath);
         } catch (IOException e) {

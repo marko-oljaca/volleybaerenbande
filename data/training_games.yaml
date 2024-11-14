@@ -77,3 +77,24 @@
     - Gerold
     - Mia
     - Jenny
+
+- date: 2024-11-13
+  type: training
+  players_present:
+    - Marko
+    - Fabian
+    - Mia
+    - Tomas
+    - Nathan
+
+- date: 2024-11-13
+  type: game
+  players_present:
+    - Marko
+    - Fabian
+    - Nathan
+    - Florian
+    - Gerold
+    - Mia
+    - Tomas
+    - Laura
