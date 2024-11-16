@@ -11,10 +11,10 @@ public class TeamLineupImage {
     public static void main(String[] args) {
         TeamLineupImage teamLineupImage = new TeamLineupImage();
         List<String> players = List.of(
-                "Mia", "Gerold", "Fabian",
-                "TBD", "Florian", "Nathan");
-        List<String> benchPlayers = List.of("-");
-        String referee = "Marko";
+                "Mia", "Gerold", "Florian",
+                "TBD", "Fabian", "Nathan");
+        List<String> benchPlayers = List.of("Marko");
+        String referee = "Dominik";
         String filePath = "graphics/team_lineup_2024_11_18.png";
 
         try {            teamLineupImage.createLineupImage(players, benchPlayers, referee, filePath);
