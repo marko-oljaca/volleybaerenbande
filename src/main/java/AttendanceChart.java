@@ -1,3 +1,4 @@
+import lombok.Setter;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtils;
 import org.jfree.chart.JFreeChart;
@@ -12,6 +13,10 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class AttendanceChart {
+
+    @Setter
+    private long trainingCount;
+
 
     public void generateAttendanceChart(Map<String, Integer> attendanceMap) throws IOException {
         // Sort the attendance map by attendance count in descending order
@@ -30,12 +35,12 @@ public class AttendanceChart {
 
         // Populate the dataset with the sorted attendance data
         for (Map.Entry<String, Integer> entry : sortedAttendanceMap.entrySet()) {
-            dataset.addValue(entry.getValue(), "Attendance", entry.getKey());
+            dataset.addValue(entry.getValue()  , "Attendance", entry.getKey());
         }
 
         // Create the bar chart
         JFreeChart barChart = ChartFactory.createBarChart(
-                "Training Attendance since 2024-10-23",
+                "Training Attendance since 2024-10-23 with total count "+trainingCount,
                 "Player",
                 "Attendance Count",
                 dataset
@@ -45,6 +50,7 @@ public class AttendanceChart {
         CategoryPlot plot = barChart.getCategoryPlot();
         NumberAxis yAxis = (NumberAxis) plot.getRangeAxis();
         yAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
+
 
         // Save the chart as a JPEG image
         File chartFile = new File("graphics/player_attendance_chart.jpeg");

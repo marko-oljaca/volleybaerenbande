@@ -9,7 +9,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class DataLoader {
 
-
     @SneakyThrows
     public static void main(String[] args) {
         Yaml attendance = new Yaml();
@@ -21,9 +20,14 @@ public class DataLoader {
 
         Map<String, Integer> playerTrainings = new HashMap<>();
 
+        long trainingCount = result.stream()
+                .filter(training -> training.get("type").equals("training"))
+                .count();
+
         activePlayers.get("activePlayer").forEach(player -> {
 
             AtomicInteger trainingsCount = new AtomicInteger();
+
 
             result.stream()
                     .filter(training -> training.get("type").equals("training"))
@@ -41,6 +45,7 @@ public class DataLoader {
         printMapSortedByValue(playerTrainings);
 
         AttendanceChart attendanceChart = new AttendanceChart();
+        attendanceChart.setTrainingCount(trainingCount);
         attendanceChart.generateAttendanceChart(playerTrainings);
 
 
@@ -51,7 +56,6 @@ public class DataLoader {
                 .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
                 .forEach(System.out::println);
     }
-
 
 
 }
