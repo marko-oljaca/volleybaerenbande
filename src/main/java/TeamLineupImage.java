@@ -11,8 +11,8 @@ public class TeamLineupImage {
     public static void main(String[] args) {
         TeamLineupImage teamLineupImage = new TeamLineupImage();
         List<String> players = List.of(
-                "Mia", "Marko", "Florian",
-                "Linda", "Tomas", "Nathan");
+                "Mia", "Marko", "Linda",
+                "Florian", "Tomas", "Nathan");
         List<String> benchPlayers = List.of("-");
         String referee = "Dominik";
         String filePath = "graphics/team_lineup_2024_12_02.png";
