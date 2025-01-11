@@ -139,3 +139,24 @@
   players_present:
     - Marko
     - Linda
+
+- date: 2024-12-11
+  type: training
+  players_present:
+    - Marko
+    - Nathan
+    - Fabian
+
+- date: 2024-12-18
+  type: training
+  players_present:
+    - Marko
+
+
+- date: 2025-01-08
+  type: training
+  players_present:
+    - Gerold
+    - Linda
+    - Fabian
+    - Nathan
