@@ -160,3 +160,84 @@
     - Linda
     - Fabian
     - Nathan
+
+- date: 2025-01-15
+  type: training
+  players_present:
+    - Marko
+    - Sabina
+    - Fabian
+    - Nathan
+    - Mia
+
+- date: 2025-01-20
+  type: training
+  players_present:
+    - Marko
+    - Florian
+    - Fabian
+    - Sabina
+    - Mia
+    - Nathan
+    - Gerold
+    - Tomas
+
+- date: 2025-01-22
+  type: training
+  players_present:
+    - Marko
+    - Fabian
+    - Mia
+    - Nathan
+
+
+- date: 2025-01-29
+  type: training
+  players_present:
+    - Marko
+    - Mia
+    - Fabian
+
+
+- date: 2025-02-03
+  type: training
+  players_present:
+    - Marko
+    - Mia
+    - Fabian
+    - Gerold
+
+- date: 2025-02-05
+  type: training
+  players_present:
+    - Marko
+    - Mia
+    - Nathan
+    - Fabian
+
+- date: 2025-02-10
+  type: training
+  players_present:
+    - Marko
+    - Fabian
+    - Nathan
+    - Sabina
+    - Florian
+
+
+- date: 2025-02-17
+  type: training
+  players_present:
+    - Marko
+    - Fabian
+    - Florian
+    - Gerold
+
+- date: 2025-02-19
+  type: training
+  players_present:
+    - Marko
+    - Fabian
+    - Florian
+    - Dominik
+    - Nathan
